@@ -1,0 +1,28 @@
+@import '../Variables/Variables.scss';
+
+.about-page-info {
+  padding: 100px 380px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $slatyBlackColor;
+    font-family: $tertiaryFont;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: $primaryFont;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #373a3c;
+    max-width: 760px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

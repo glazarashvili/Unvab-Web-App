@@ -1,0 +1,37 @@
+@import '../../Variables/Variables.scss';
+
+.projects-menu {
+  width: 100%;
+
+  .project-menu__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+  }
+
+  h1 {
+    color: $slatyBlackColor;
+    font-family: $tertiaryFont;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+    p {
+    font-family: $primaryFont;
+    line-height: 1.65;
+    max-width: 760px;
+    text-align: center;
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 370px);
+  justify-content: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}

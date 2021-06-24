@@ -1,0 +1,26 @@
+$whiteColor: #fff;
+$greyColor: #5f5f5f;
+$blackColor: #373a3c;
+$brownColor: #bfbfbf;
+$slatyBlackColor: #171717;
+
+$primaryFont: 'Work Sans', sans-serif;
+$secondaryFont: 'Macondo', cursive;
+$tertiaryFont: 'Playfair Display', serif;
+
+@mixin inputStyle($width) {
+  padding: 16px 22px;
+    font-size: .95rem;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: $whiteColor;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    width: $width;
+
+    &::placeholder {
+      color: #55595c;
+      font-family: $primaryFont;
+    }
+}

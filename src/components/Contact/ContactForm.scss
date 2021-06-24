@@ -1,0 +1,24 @@
+@import '../../Variables/Variables.scss';
+
+.contact-form {
+  &__first-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__second-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    @include inputStyle(320px);
+    margin-bottom: 20px;
+  }
+
+  .title-input {
+    @include inputStyle(660px);
+  }
+}
+
+

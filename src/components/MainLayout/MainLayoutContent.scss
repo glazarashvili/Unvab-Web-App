@@ -1,0 +1,33 @@
+@import '../../Variables/Variables.scss';
+
+.main-layout-content {
+  position: relative;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: $whiteColor;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
+
+  p {
+    font-family: $tertiaryFont;
+    color: $whiteColor;
+    font-size: 52px;
+  }
+
+  span {
+    color: $whiteColor;
+    font-size: 52px;
+    margin-top: 10px;
+    font-family: $tertiaryFont;
+    font-style: italic;
+  }
+}

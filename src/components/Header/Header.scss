@@ -1,0 +1,48 @@
+@import '../../Variables/Variables.scss';
+
+.header {
+  // position: fixed; !!!!!!!!!!!!!!!!!!!!
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f6f6f6;
+  font-family: $primaryFont;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+
+  .snow-logo {
+    width: 80px;
+    height: 30px;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin: 10px;
+    text-transform: uppercase;
+    color: $brownColor;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover { 
+      color: $whiteColor;
+    }
+  }
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 4px solid red;
+}
+
+

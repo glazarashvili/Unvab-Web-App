@@ -1,0 +1,28 @@
+@import '../../Variables/Variables.scss';
+
+.contact-info {
+  h2 {
+    font-family: $primaryFont;
+    color: $slatyBlackColor;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 18px;
+  }
+
+  h3, p {
+    font-family: $primaryFont;
+    color: $slatyBlackColor;
+    font-size: 15px;
+    margin: 8px;
+    max-width: 400px;
+    color: $greyColor;
+    margin: 24px;
+  }
+
+  span {
+    font-family: $primaryFont;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 7px;
+  }
+}
