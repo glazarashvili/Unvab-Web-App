@@ -1,12 +1,10 @@
 import React from 'react'
+import ProjectsMenu from '../components/ProjectsMenu/ProjectsMenu'
+
 
 const Portfolio = () => {
   return (
-    <div>
-      Portfolio Page
-      dddddddddddddddddddddddddddd
-      
-    </div>
+    <ProjectsMenu />
   )
 }
 

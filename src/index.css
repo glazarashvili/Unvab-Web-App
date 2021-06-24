@@ -46,3 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+html {
+	width:100vw;
+	overflow-x:hidden;
+}
+
+
+.navlink-selected {
+  padding-bottom: 2px solid red;
+}

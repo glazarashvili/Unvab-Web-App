@@ -1,17 +1,17 @@
 @import '../../Variables/Variables.scss';
 
 .header {
-  // position: fixed; !!!!!!!!!!!!!!!!!!!!
+  // position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background: #f6f6f6;
   font-family: $primaryFont;
-  padding: 30px 100px;
+  padding: 40px 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: transparent;
+  background: black;
 
   .snow-logo {
     width: 80px;
@@ -21,28 +21,32 @@
   ul {
     display: flex;
     align-items: center;
-  }
-
-  li {
-    margin: 10px;
-    text-transform: uppercase;
-    color: $brownColor;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-
-    &:hover { 
-      color: $whiteColor;
-    }
+    justify-content: space-between;
+    min-width: 600px;
   }
 }
 
 .navlink {
+  margin: 10px;
+  text-transform: uppercase;
+  color: $brownColor;
+  font-weight: 600;
+  cursor: pointer;
   text-decoration: none;
+  list-style: none;
+
+  &:hover { 
+    color: $whiteColor;
+  }
 }
 
-.active {
-  border-bottom: 4px solid red;
+.navlink-selected {
+  color: $whiteColor;
+
+  &:hover {
+    color: $whiteColor;
+  }
 }
+
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import About from './pages/About'
-import Contact from './pages/Contact'
+import ContactPage from './pages/ContactPage'
 import Portfolio from './pages/Portfolio'
 import Blog from './pages/Blog'
 
@@ -9,19 +9,20 @@ import Blog from './pages/Blog'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MainPage from './pages/MainPage'
-import MainLayout from './components/MainLayout/MainLayout'
+// import MainLayout from './components/MainLayout/MainLayout'
+
+import Header from './components/Header/Header'
 
 
 const App = () => {
   return (
     <Router>
+      <Header />
       <Route path='/' exact component={MainPage} />
-      <Route path='/about' component={About} />
-      <Route path='/contact' component={Contact} />
+      <Route path='/about' component={Blog} />
       <Route path='/portfolio' component={Portfolio} />
-
-
-
+      <Route path='/contact' component={ContactPage} />
+      <Route path='/blog' component={Blog} />
     </Router>
   )
 }
