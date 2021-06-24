@@ -1,11 +1,16 @@
 import './Header.scss'
 import HeaderImage from '../../assets/portfolio/logo-light.svg'
 
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 
-const Header = () => (
-    <div className='header'>
+const Header = () => {
+  let location = useLocation().pathname
+  const bgColor = location === '/' ? 'transparent' : 'black'
+
+
+  return (
+    <div className='header' style={{backgroundColor: bgColor}}>
       <NavLink to='/'>
         <img 
           className='snow-logo' 
@@ -21,6 +26,7 @@ const Header = () => (
         <NavLink activeClassName='navlink-selected' className='navlink' to='/wordpress-theme'>wordpress theme</NavLink>
       </ul>
     </div>
-)
+  )
+}
 
 export default Header
