@@ -8,7 +8,10 @@ import MainLayout from '../components/MainLayout/MainLayout'
 import ProjectsMenu from '../components/ProjectsMenu/ProjectsMenu'
 
 
-const MainPage = () => (
+const MainPage = () => {
+
+  return (
+    
   <React.Fragment>
     <MainLayout />
     <About />
@@ -17,6 +20,7 @@ const MainPage = () => (
     <BlogsMenu />
     <Contact />
   </React.Fragment>
-)
+  )
+}
 
 export default MainPage

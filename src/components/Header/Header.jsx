@@ -1,12 +1,21 @@
 import './Header.scss'
+import React from 'react'
 import HeaderImage from '../../assets/portfolio/logo-light.svg'
 
 import { NavLink, useLocation } from 'react-router-dom'
 
 
 const Header = () => {
+
+  const [offset, setOffset] = React.useState(0);
+  React.useEffect(() => {
+    setTimeout(window.onscroll = () => {
+      setOffset(window.pageYOffset)
+    })
+  }, []);
+
   let location = useLocation().pathname
-  const bgColor = location === '/' ? 'transparent' : 'black'
+  const bgColor = location === '/' && offset === 0 ? 'transparent': 'white'
 
 
   return (
