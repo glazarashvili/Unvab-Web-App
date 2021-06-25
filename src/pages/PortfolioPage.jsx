@@ -4,7 +4,7 @@ import ProjectsMenu from '../components/ProjectsMenu/ProjectsMenu'
 
 const Portfolio = () => {
   return (
-    <ProjectsMenu />
+      <ProjectsMenu marginTop='100px' />
   )
 }
 

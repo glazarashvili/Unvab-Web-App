@@ -4,10 +4,10 @@ import PageInfo from '../PageInfo/PageInfo'
 
 import './About.scss'
 
-const About = () => {
+const About = ({ marginTop }) => {
   return (
-    <React.Fragment>
-      <div className='about-page-info' id='about'>
+    <div style={{marginTop: marginTop}}>
+      <div className='about-page-info'>
         <h1>About Our Agency</h1>
         <p>We are a new design studio based in USA. 
           We have over 20 years of combined experience, 
@@ -19,7 +19,7 @@ const About = () => {
         />
       </div>
       <PageInfo />
-    </React.Fragment>
+    </div>
   )
 }
 

@@ -4,9 +4,9 @@ import blogs from './data.js'
 
 import './BlogsMenu.scss'
 
-const BlogsMenu = () => {
+const BlogsMenu = ({ marginTop }) => {
   return (
-      <div className='blogs-menu-container'>
+      <div className='blogs-menu-container' style={{marginTop: marginTop}}>
         {blogs.map(blog => (
           <Card 
             key={blog.id}

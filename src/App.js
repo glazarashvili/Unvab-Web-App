@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import MainPage from './pages/MainPage'
 import AboutPage from './pages/AboutPage'
-import Portfolio from './pages/PortfolioPage'
+import PortfolioPage from './pages/PortfolioPage'
 import ContactPage from './pages/ContactPage'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import BlogsMenu from './components/BlogsMenu/BlogsMenu'
+import BlogPage from './pages/BlogPage'
+
 
 const App = () => {
 
@@ -16,10 +17,10 @@ const App = () => {
     <Router>
       <Header />
       <Route path='/' exact component={MainPage} />
-      <Route path='/blog' component={BlogsMenu} />
+      <Route path='/blog' component={BlogPage} />
       <Route path='/about' component={AboutPage} />
       <Route path='/contact' component={ContactPage} />
-      <Route path='/portfolio' component={Portfolio} />
+      <Route path='/portfolio' component={PortfolioPage} />
       <Footer />
     </Router>
   )

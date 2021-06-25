@@ -1,12 +1,12 @@
-import './Header.scss'
 import React from 'react'
-import HeaderImage from '../../assets/portfolio/logo-light.svg'
-
 import { NavLink, useLocation } from 'react-router-dom'
+
+import './Header.scss'
+
+import HeaderImage from '../../assets/portfolio/logo-light.svg'
 
 
 const Header = () => {
-
   const [offset, setOffset] = React.useState(0);
   React.useEffect(() => {
     setTimeout(window.onscroll = () => {
@@ -32,6 +32,13 @@ const Header = () => {
         <NavLink activeClassName='navlink-selected' className='navlink' to='/portfolio'>portfolio</NavLink>
         <NavLink activeClassName='navlink-selected' className='navlink' to='/contact'>contact</NavLink>
         <NavLink activeClassName='navlink-selected' className='navlink' to='/blog'>blog</NavLink>
+        <a 
+          className='navlink' 
+          target='_blank' 
+          rel='noreferrer' 
+          href='https://themeforest.net/item/snow-minimal-clean-wordpress-portfolio-theme/19347252?ref=unvab'>
+           wordpress theme
+        </a>
       </ul>
     </div>
   )

@@ -25,9 +25,9 @@ const projects = [
   {id: 10, image: url9, title: 'Minimal Bag', category: 'Branding'},
 ]
 
-const ProjectsMenu = () => {
+const ProjectsMenu = ({ marginTop }) => {
   return (
-    <div className='projects-menu'>
+    <div className='projects-menu' style={{marginTop: marginTop}}>
       <div className='project-menu__item'>
         <h1>Best Projects</h1>
         <p>Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. 

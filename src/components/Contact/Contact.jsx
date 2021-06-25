@@ -5,9 +5,9 @@ import ContactForm from './ContactForm'
 
 import './Contact.scss'
 
-const Contact = () => {
+const Contact = ({ marginTop }) => {
   return (
-    <div className='contact-container'>
+    <div className='contact-container' style={{marginTop: marginTop}}>
       <ContactInfo />
       <ContactForm />
     </div>

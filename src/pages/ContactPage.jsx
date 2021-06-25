@@ -6,7 +6,7 @@ import Contact from '../components/Contact/Contact'
 const ContactPage = () => {
   return (
     <React.Fragment>
-      <Contact />
+      <Contact marginTop='100px' />
       <About />
     </React.Fragment>
   )
