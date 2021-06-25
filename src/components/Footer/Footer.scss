@@ -1,16 +1,24 @@
 @import '../../Variables/Variables.scss';
 
-footer {
+.footer-container {
   width: 100%;
   background: #EBEBEB;
   padding: 50px 100px;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    margin-top: 20px;
+  }
 
   img {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    opacity: 0.2;
+    opacity: 0.3;
     padding: 5px;
 
     &:hover {
