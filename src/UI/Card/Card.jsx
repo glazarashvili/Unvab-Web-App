@@ -1,10 +1,10 @@
-import React from 'react';
-import CardItem from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import CardContent from '@material-ui/core/CardContent';
-import CardActionArea from '@material-ui/core/CardActionArea';
+import React from 'react'
+import CardItem from '@material-ui/core/Card'
+import CardMedia from '@material-ui/core/CardMedia'
+import { makeStyles } from '@material-ui/core/styles'
+import Typography from '@material-ui/core/Typography'
+import CardContent from '@material-ui/core/CardContent'
+import CardActionArea from '@material-ui/core/CardActionArea'
 
 const useStyles = makeStyles({
   root: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles({
     color: '#171717',
     padding: 5
   }
-});
+})
 
 const Card = ({ title, date, description, image }) => {
 
@@ -55,13 +55,13 @@ const Card = ({ title, date, description, image }) => {
           title="Nature Pic"
         />
         <CardContent className={classes.textContent}>
-          <Typography className={classes.h2} gutterBottom variant="h5" component="h2">
+          <Typography className={classes.h2} gutterBottom>
             {title}
           </Typography>
-          <Typography className={classes.paragraph} variant="body2" color="textSecondary" component="p">
+          <Typography className={classes.paragraph} variant="body2" color="textSecondary" >
             {date}
           </Typography>
-          <Typography  className={classes.paragraph} variant="body2" color="textSecondary" component="p">
+          <Typography  className={classes.paragraph} variant="body2" color="textSecondary" >
             {description}
           </Typography>
         </CardContent>
