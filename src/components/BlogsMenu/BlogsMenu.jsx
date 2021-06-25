@@ -4,7 +4,6 @@ import blogs from './data.js'
 
 import './BlogsMenu.scss'
 
-
 const BlogsMenu = () => {
   return (
       <div className='blogs-menu-container'>

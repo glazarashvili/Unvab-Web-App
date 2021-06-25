@@ -1,26 +1,26 @@
 import React from 'react'
 
-import Blog from './pages/Blog'
-import About from './pages/About'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
 import MainPage from './pages/MainPage'
-import Portfolio from './pages/Portfolio'
+import AboutPage from './pages/AboutPage'
+import Portfolio from './pages/PortfolioPage'
 import ContactPage from './pages/ContactPage'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-
+import BlogsMenu from './components/BlogsMenu/BlogsMenu'
 
 const App = () => {
+
   return (
     <Router>
-        <Header />
-        <Route path='/blog' component={Blog} />
-        <Route path='/about' component={About} />
-        <Route path='/' exact component={MainPage} />
-        <Route path='/contact' component={ContactPage} />
-        <Route path='/portfolio' component={Portfolio} />
-        <Footer />
+      <Header />
+      <Route path='/' exact component={MainPage} />
+      <Route path='/blog' component={BlogsMenu} />
+      <Route path='/about' component={AboutPage} />
+      <Route path='/contact' component={ContactPage} />
+      <Route path='/portfolio' component={Portfolio} />
+      <Footer />
     </Router>
   )
 }

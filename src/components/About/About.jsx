@@ -1,13 +1,13 @@
 import React from 'react'
 
-import '../Styles/AboutPage.scss'
+import PageInfo from '../PageInfo/PageInfo'
 
-import PageInfo from '../components/PageInfo/PageInfo'
+import './About.scss'
 
 const About = () => {
   return (
     <React.Fragment>
-      <div className='about-page-info'>
+      <div className='about-page-info' id='about'>
         <h1>About Our Agency</h1>
         <p>We are a new design studio based in USA. 
           We have over 20 years of combined experience, 

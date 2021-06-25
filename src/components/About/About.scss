@@ -1,4 +1,4 @@
-@import '../Variables/Variables.scss';
+@import '../../Variables/Variables.scss';
 
 .about-page-info {
   padding: 100px 380px;
@@ -6,7 +6,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
 
   h1 {
     color: $slatyBlackColor;

@@ -15,7 +15,7 @@ const Header = () => {
   }, []);
 
   let location = useLocation().pathname
-  const bgColor = location === '/' && offset === 0 ? 'transparent': 'white'
+  const bgColor = location === '/' && offset === 0 ? 'transparent': 'black'
 
 
   return (
@@ -32,7 +32,6 @@ const Header = () => {
         <NavLink activeClassName='navlink-selected' className='navlink' to='/portfolio'>portfolio</NavLink>
         <NavLink activeClassName='navlink-selected' className='navlink' to='/contact'>contact</NavLink>
         <NavLink activeClassName='navlink-selected' className='navlink' to='/blog'>blog</NavLink>
-        <NavLink activeClassName='navlink-selected' className='navlink' to='/wordpress-theme'>wordpress theme</NavLink>
       </ul>
     </div>
   )

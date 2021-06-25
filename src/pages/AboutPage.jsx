@@ -3,13 +3,13 @@ import React from 'react'
 import About from '../components/About/About'
 import Contact from '../components/Contact/Contact'
 
-const ContactPage = () => {
+const AboutPage = () => {
   return (
     <React.Fragment>
-      <Contact />
       <About />
+      <Contact />
     </React.Fragment>
   )
 }
 
-export default ContactPage
+export default AboutPage
