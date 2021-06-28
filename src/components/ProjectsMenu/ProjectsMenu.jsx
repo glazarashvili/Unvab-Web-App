@@ -3,15 +3,15 @@ import Project from './Project'
 
 import './ProjectsMenu.scss'
 
-import url1 from '../../assets/portfolio/1.jpg'
-import url2 from '../../assets/portfolio/2.jpg'
-import url3 from '../../assets/portfolio/3.jpg'
-import url4 from '../../assets/portfolio/4.jpg'
-import url5 from '../../assets/portfolio/5.jpg'
-import url6 from '../../assets/portfolio/6.jpg'
-import url7 from '../../assets/portfolio/7.jpg'
-import url8 from '../../assets/portfolio/8.jpg'
-import url9 from '../../assets/portfolio/9.jpg'
+import url1 from '../../assets/images/portfolio/1.jpg'
+import url2 from '../../assets/images/portfolio/2.jpg'
+import url3 from '../../assets/images/portfolio/3.jpg'
+import url4 from '../../assets/images/portfolio/4.jpg'
+import url5 from '../../assets/images/portfolio/5.jpg'
+import url6 from '../../assets/images/portfolio/6.jpg'
+import url7 from '../../assets/images/portfolio/7.jpg'
+import url8 from '../../assets/images/portfolio/8.jpg'
+import url9 from '../../assets/images/portfolio/9.jpg'
 
 const projects = [
   {id: 2, image: url1, title: 'Vinyl Record', category: 'Design'},

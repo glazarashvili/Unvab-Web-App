@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 
 import './Header.scss'
 
-import HeaderImage from '../../assets/portfolio/logo-light.svg'
+import HeaderImage from '../../assets/images/svgs/logo-light.svg'
 
 
 const Header = () => {

@@ -4,10 +4,10 @@ import './PageInfo.scss'
 
 import PageInfoItem from './PageInfoItem'
 
-import starLogo from '../../assets/svgs/starLogo.svg'
-import workLogo from '../../assets/svgs/workLogo.svg'
-import heartLogo from '../../assets/svgs/heartLogo.svg'
-import scheduleLogo from '../../assets/svgs/schedule.svg'
+import starLogo from '../../assets/images/svgs/starLogo.svg'
+import workLogo from '../../assets/images/svgs/workLogo.svg'
+import heartLogo from '../../assets/images/svgs/heartLogo.svg'
+import scheduleLogo from '../../assets/images/svgs/schedule.svg'
 
 const userInfo = [
   {id: 1, amount: 548, title: 'projects completed', logo: workLogo},
